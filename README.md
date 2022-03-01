@@ -160,7 +160,6 @@ Plus house has a slow business model, as a person usually buys only one property
 <ul>
   <li><a href='https://www.oreilly.com/library/view/practical-statistics-for/9781491952955/'>Practical Statistics Book</li>
   <li><a href='https://www.strategyzer.com/books/business-model-generation'>Model Bussiness Book</li>
-  <li><a href='https://www.docusign.com.br/blog/indicadores-do-varejo'>Retail Metrics</li>
   <li><a href='https://www.kaggle.com/bhavikapanara/frequency-encoding'>Frequency Encoding</li>
   <li><a href='https://en.wikipedia.org/wiki/Gradient_boosting'>Gradient Boosting</li>
   <li><a href='https://en.wikipedia.org/wiki/Occam%27s_razor'>Occam's Razor</li>
