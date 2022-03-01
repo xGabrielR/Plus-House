@@ -123,7 +123,7 @@ Plus house has a slow business model, as a person usually buys only one property
 <h3>4.3. Feature Selection</h3>
 <p>XGBoost & Random Forest Feature Importance is a fast and good way to see which feature is important, feature selection is a second way to select features for better performace of model and following the principles of Occam's Razor.</p>
 
-![xgboost](https://user-images.githubusercontent.com/75986085/156092966-1d7074e9-187a-45f1-aa92-3e5e862a0c76.png)
+![xgboost](https://user-images.githubusercontent.com/75986085/156093020-f50ae838-e15a-44a7-8a44-0751d25437a9.png)
 
 1. **Overall Quall**: Suggestion of XGBoost and Random Forest and have a positive correlation.
 2. **Exter Qual (Evaluates the quality of the material on the exterior)**: Suggestion of XGBoost, with Ordinal Encoder its haved a good Importance.
@@ -140,14 +140,11 @@ Plus house has a slow business model, as a person usually buys only one property
 <h2>5. Machine Learning Models</h2>
 <p>I have used three models, SVR (Support Vector Regression), Random Forest and XGBoost (Gradient boosted decision tree).</p>
 
-![models](https://user-images.githubusercontent.com/75986085/154582560-384c54b0-c4a3-4e11-8862-5905ac12c197.png)
+![models_performace](https://user-images.githubusercontent.com/75986085/156093348-95f2a54d-3fa5-4f9a-a611-a58a0a4e2c51.png)
 
 <p>I have selected the XGBoost than all of other two for production, in the step of hyperparameter fine tuning I used a tuning technique called Random Search and tested the trained model in the dataset with data leakage and in the dataset without data leakage. The information are in Notebook m03_machine_learningII.</p>
 
-<p>Neural Network performace for aprox 40 epochs.</p>
-
-![nn](https://user-images.githubusercontent.com/75986085/155723418-ae002196-8c5f-40a3-85be-0e74ba9337ea.png)
-
+![model_c](https://user-images.githubusercontent.com/75986085/156093370-aab37568-a172-46d8-8281-0326169e3cae.png)
 
 <h2>6. Bussiness Results</h2>
 <p>This istep is to convert the model performace in money!!.</p><p>Below have model performace for two of the mos harder shops to forecast, there are stores where the algorithm cannot predict sales, so the RMSE error was high. MAE error be greater too, to avoid this is train more the model and work on better features. Have two columns, worst & best scenario, this columns is the sum and subtraction respectively os MAE for each model forecast.</p>
