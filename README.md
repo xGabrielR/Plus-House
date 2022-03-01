@@ -164,6 +164,6 @@ Plus house has a slow business model, as a person usually buys only one property
   <li><a href='https://www.kaggle.com/bhavikapanara/frequency-encoding'>Frequency Encoding</li>
   <li><a href='https://en.wikipedia.org/wiki/Gradient_boosting'>Gradient Boosting</li>
   <li><a href='https://en.wikipedia.org/wiki/Occam%27s_razor'>Occam's Razor</li>
-  <li><a href='https://machinelearningmastery.com/hyperparameter-optimization-with-random-search-and-grid-search/'>Random Search Tuning</li>
+  <li><a href='https://machinelearningmastery.com/hyperparameter-optimization-with-random-search-and-grid-search/'>Random Search Tuning</a></li>
   <li>More at Notebook.</li>
 </ul>
