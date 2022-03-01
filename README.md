@@ -148,22 +148,15 @@ Plus house has a slow business model, as a person usually buys only one property
 
 <h2>6. Bussiness Results</h2>
 <p>This istep is to convert the model performace in money!!.</p><p>Below have model performace for two of the mos harder shops to forecast, there are stores where the algorithm cannot predict sales, so the RMSE error was high. MAE error be greater too, to avoid this is train more the model and work on better features. Have two columns, worst & best scenario, this columns is the sum and subtraction respectively os MAE for each model forecast.</p>
-
-![hard_shops](https://user-images.githubusercontent.com/75986085/155026649-f00b6e31-740c-465e-b67c-ddccee4342e8.png)
-
 <p>Below have the Sum of sales for each senario.</p>
 
-![model_money](https://user-images.githubusercontent.com/75986085/155026940-46e5fd45-4d2c-4287-bf5e-ae2ccea0cbf8.png)
+![result](https://user-images.githubusercontent.com/75986085/156093650-12d51720-304d-4bd7-96a4-d0af7be514e3.png)
 
-<h2>7. Model Deployment</h2>
+<!-- <h2>7. Model Deployment</h2>
 <p>For deployment i selected Heroku for base clound 24/7h free.</p>
-<p>Made a Telegram Bot and Personal '.exe' app for CFO to check the sales on smartphone and desktop.</p>
+<p>Made a Telegram Bot and Personal '.exe' app for CFO to check the sales on smartphone and desktop.</p> -->
 
-![sales](https://user-images.githubusercontent.com/75986085/155308939-12f879ae-bdde-41f7-b02d-dade281606b6.png)
-
-![img](https://user-images.githubusercontent.com/75986085/155615627-dcbe0fd7-6116-4a91-ae17-40d4e5ee3e8b.png)
-
-<h2>7. References</h2>
+<h2>8. References</h2>
 <ul>
   <li><a href='https://www.oreilly.com/library/view/practical-statistics-for/9781491952955/'>Practical Statistics Book</li>
   <li><a href='https://www.strategyzer.com/books/business-model-generation'>Model Bussiness Book</li>
@@ -172,4 +165,5 @@ Plus house has a slow business model, as a person usually buys only one property
   <li><a href='https://en.wikipedia.org/wiki/Gradient_boosting'>Gradient Boosting</li>
   <li><a href='https://en.wikipedia.org/wiki/Occam%27s_razor'>Occam's Razor</li>
   <li><a href='https://machinelearningmastery.com/hyperparameter-optimization-with-random-search-and-grid-search/'>Random Search Tuning</li>
+  More at Notebook.
 </ul>
