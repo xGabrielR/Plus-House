@@ -154,9 +154,9 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
 
 ![result](https://user-images.githubusercontent.com/75986085/156093650-12d51720-304d-4bd7-96a4-d0af7be514e3.png)
 
-<!-- <h2>7. Model Deployment</h2>
+<h2>7. Model Deployment</h2>
 <p>For deployment i selected Heroku for base clound 24/7h free.</p>
-<p>Made a Telegram Bot and Personal '.exe' app for CFO to check the sales on smartphone and desktop.</p> -->
+<p>Made a Streamlit App for CFO to check the sales on smartphone and desktop.</p>
 
 <h2>8. References</h2>
 <ul>
