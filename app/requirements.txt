@@ -1,0 +1,10 @@
+Cython
+sklearn
+inflection
+xgboost
+Flask
+numpy
+pandas
+requests
+plotly-express
+streamlit

@@ -1,0 +1,17 @@
+* { 
+    padding: 1.5px; 
+}
+
+::selection { color: #b950ff; }
+
+p {
+    color: #428df5; 
+}
+
+h1 {
+    color: #7033ff; text-align: center; 
+}
+
+h2 {
+    color: #8d5dfc
+}
