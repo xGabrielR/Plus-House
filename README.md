@@ -136,14 +136,21 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
 1. **Overall Quall**: Suggestion of XGBoost and Random Forest and have a positive correlation.
 2. **Exter Qual (Evaluates the quality of the material on the exterior)**: Suggestion of XGBoost, with Ordinal Encoder its haved a good Importance.
 3. **Total Sqft**: Suggestion of XGBoost, feature engineering (living_area + bsmt).
-4. **1st Floor Sqft (First Floor square feet)**: Visual Linear dependence with Sales.
-5. **Total Basement Sqft**: Visual Linear dependence with Sales./
-6. **Gr Sqft**: Living Area Square Feet./
-7. **Year Built**: Year of Property Builted, More New, more expensive.
-8. **Lot Frontage (Distance between street and property)**: Have a litle linear dependence.
-9. **Garage Yr Blt**: More New Garages, more expensive the house.
-10. **Condition1**: Geral condition of the house.
-11. **Fireplace Qu**: Have a Litle dependencie with sales./
+4. **Total Abv Grade**: Feature Engineering Feature.
+5. **Total Bath**: Feature Engineering feature.
+6. **Garage Multy Car**: Feature Engineering Feature.
+7. **Land Slope**: Visual Linear dependence with Sales, people prefer houses without Slope.
+8. **Bldg Type**: Type of House.
+9. **Exter Cond**: Exterior of House Condition.
+10. **Neighborhood**: Neighborhood of House if located.
+11. **Central Air**: Have Central air or Not.
+12. **Garage Finish**: Have or no a finished agarage on House.
+13. **Condition2**: Geral condition of the house.
+15. **Foundation**: The of Foundation of the House.
+16. **Bsmt Cond**: Overall condition of Basement.
+17. **Heating Qc**: Quall of method Heating (Dense Glass...)
+18. **Paved Drive**: Type of Paved Driveway ( Dirt, Partial or Paved )
+14. **Fireplace Qu**: Quall of Fireplace of the house.
 
 <h2>5. Machine Learning Models</h2>
 <p>I have used three models, SVR (Support Vector Regression), Random Forest and XGBoost (Gradient boosted decision tree).</p>
