@@ -82,6 +82,12 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
   </dl>
 </ul>
 
+<h3>Second CRISP Cycle</h3>
+<p>In second Cycle, i focus on Feature Engineering creating more five Features to train the model, one of them i have droped.</p>
+<p>I have used same data preparation of the First Cycle, in next Cycles i can change the encoding and create new Features.</p>
+
+
+
 <h2>3. EDA Insight's</h2>
 
 <p>After brainstorming and hypothesis validation, some insights appeared.</p>
