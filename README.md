@@ -86,8 +86,6 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
 <p>In second Cycle, i focus on Feature Engineering creating more five Features to train the model, one of them i have droped.</p>
 <p>I have used same data preparation of the First Cycle, in next Cycles i can change the encoding and create new Features.</p>
 
-
-
 <h2>3. EDA Insight's</h2>
 
 <p>After brainstorming and hypothesis validation, some insights appeared.</p>
@@ -131,7 +129,9 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
 <h3>4.3. Feature Selection</h3>
 <p>XGBoost & Random Forest Feature Importance is a fast and good way to see which feature is important, feature selection is a second way to select features for better performace of model and following the principles of Occam's Razor.</p>
 
-![xgboost](https://user-images.githubusercontent.com/75986085/156093020-f50ae838-e15a-44a7-8a44-0751d25437a9.png)
+<p>XGBoost Feature Selection on Second Cycle.</p>
+
+![xgb](https://user-images.githubusercontent.com/75986085/156905683-ba81374e-46f0-4152-8359-8d38cb85c1ca.png)
 
 1. **Overall Quall**: Suggestion of XGBoost and Random Forest and have a positive correlation.
 2. **Exter Qual (Evaluates the quality of the material on the exterior)**: Suggestion of XGBoost, with Ordinal Encoder its haved a good Importance.
@@ -150,15 +150,31 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
 
 ![models_performace](https://user-images.githubusercontent.com/75986085/156093348-95f2a54d-3fa5-4f9a-a611-a58a0a4e2c51.png)
 
+<p>Model Performace on Second Cycle.</p>
+
+![model_performace](https://user-images.githubusercontent.com/75986085/156905694-d0f549f1-f8a4-4c9a-b642-f8c4c81f4ecb.png)
+
 <p>I have selected the XGBoost than all of other two for production, in the step of hyperparameter fine tuning I used a tuning technique called Random Search and tested the trained model in the dataset with data leakage and in the dataset without data leakage. The information are in Notebook m03_machine_learningII.</p>
 
 ![model_c](https://user-images.githubusercontent.com/75986085/156093370-aab37568-a172-46d8-8281-0326169e3cae.png)
+
+<p>Second Cycle Tuned Model.</p>
+
+![model_tunned](https://user-images.githubusercontent.com/75986085/156905716-e0627f2c-620d-4012-ad82-299967399e90.png)
 
 <h2>6. Bussiness Results</h2>
 <p>This istep is to convert the model performace in money!!.</p><p>Below have model performace for two of the mos harder shops to forecast, there are stores where the algorithm cannot predict sales, so the RMSE error was high. MAE error be greater too, to avoid this is train more the model and work on better features. Have two columns, worst & best scenario, this columns is the sum and subtraction respectively os MAE for each model forecast.</p>
 <p>Below have the Sum of sales for each senario.</p>
 
 ![result](https://user-images.githubusercontent.com/75986085/156093650-12d51720-304d-4bd7-96a4-d0af7be514e3.png)
+
+<p>In a most Realistic Scenario on Second Cycle</p>
+
+![sales](https://user-images.githubusercontent.com/75986085/156905745-7743f164-eeb6-4ca0-8d46-d77b410268b8.png)
+
+<p>First and Second Cycles -> Error Rate of Model</p>
+
+![second_results](https://user-images.githubusercontent.com/75986085/156905760-00f6c735-f66c-4650-ab69-ce26f61fd57f.png)
 
 <h2>7. Model Deployment</h2>
 <p>For deployment i selected Heroku for base clound 24/7h free.</p>
