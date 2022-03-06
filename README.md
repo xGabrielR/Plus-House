@@ -176,11 +176,21 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
 
 ![second_results](https://user-images.githubusercontent.com/75986085/156905760-00f6c735-f66c-4650-ab69-ce26f61fd57f.png)
 
-<h2>7. Model Deployment</h2>
+<h2>7. Second Cycle Resume</h2>
+<p>The Objective of this second Cycle is Feature Engineering and EDA focusing on Indivudual 81 individual feature analysis.</p>
+<ul>
+  <dl>
+    <dt>Reduced MAPE error of Property 812 from 0.92 to 0.38.</dt>
+    <dt>The Greater MAPE is 0.61 on Dataset, reduction of 0.33 of MAPE error rate.</dt>
+    <dt>Model prediction is </dt>
+  </dl>
+</ul>
+
+<h2>8. Model Deployment</h2>
 <p>For deployment i selected Heroku for base clound 24/7h free.</p>
 <p>Made a Streamlit App for CFO to check the sales on smartphone and desktop.</p>
 
-<h2>8. References</h2>
+<h2>9. References</h2>
 <ul>
   <li><a href='https://www.oreilly.com/library/view/practical-statistics-for/9781491952955/'>Practical Statistics Book</li>
   <li><a href='https://www.strategyzer.com/books/business-model-generation'>Model Bussiness Book</li>
