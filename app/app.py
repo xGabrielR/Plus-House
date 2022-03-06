@@ -1,3 +1,5 @@
+from multiprocessing.sharedctypes import Value
+from os import execlp
 import re
 import pickle
 import inflection
@@ -16,7 +18,7 @@ class PlusApp():
 
     def __init__( self ):
         self.pl = PlusHouse()
-        self.model = pickle.load( open( 'skl/xgb_tunned.pkl', 'rb' ) )
+        self.model = pickle.load( open( 'skl/xgb_tuned.pkl', 'rb' ) )
         
     def pre_html( self ): # Try to Use a External Style
         html='''
@@ -33,7 +35,15 @@ class PlusApp():
     def plot_line( self ):
         simple_line = '''
         <style>
-        .line { position: absolute; width: 330px; left: 50px; opacity: 15%; height: 20px; top: 80px; background: rgb(253, 250, 255 ); } 
+        
+        .line { position: absolute; width: 200px; left: 50px; opacity: 15%; height: 20px; top: 80px; background: rgb(253, 250, 255 ); }
+        
+        @media only screen and (max-width: 600px) {
+            .line { 
+                dispaly: None;
+            }
+        } 
+        
         </style>
         <div class='line'></div>'''
         st.markdown( simple_line, unsafe_allow_html=True )
@@ -96,7 +106,7 @@ class PlusApp():
         dfaux = df[['neighborhood', 'prediction']].groupby('neighborhood').sum().reset_index()
 
         fig = px.bar( dfaux, x='neighborhood', y='prediction', text_auto='.2s', \
-                    title='Predictions for each Neighborhood', width=700, height=500, \
+                    title='Predictions for each Neighborhood', width=800, height=500, \
                     color_discrete_sequence=["black"], hover_name='prediction' )
 
         fig.update_traces( textfont_size=20, textangle=0, textposition="outside", cliponaxis=False )
@@ -105,7 +115,7 @@ class PlusApp():
 
         return None
 
-    def sender_dataset( self ):
+    def sender_dataset( self, df_on_base ):
         self.plot_line()
         st.header('❏ Drag and Drop Your Dataset Here')
 
@@ -120,17 +130,20 @@ class PlusApp():
             df1 = pd.read_csv( file )
             df1.columns = [inflection.underscore( col_name ) for col_name in df1.columns.tolist()]
 
-            cols_requested = ['overall_qual', 'exter_qual', '1st_flr_sf', 
-                            'total_bsmt_sf', 'gr_liv_area', 'year_built', 'lot_frontage', 
-                            'garage_yr_blt', 'condition1', 'fireplace_qu']
+            cols_important = ['garage_yr_blt', 'fireplace_qu', 'total_bsmt_sf', 'gr_liv_area' , 'wood_deck_sf', 
+                              'open_porch_sf', 'enclosed_porch', '3_ssn_porch', 'screen_porch', 'garage_area', 'garage_cars', 
+                              'bsmt_full_bath', 'full_bath', 'bsmt_half_bath', 'half_bath', 'tot_rms_abv_grd', 'kitchen_abv_gr', 'bedroom_abv_gr',
+                               'low_qual_fin_sf', '2nd_flr_sf', '1st_flr_sf']
 
-            list_len = [i for i in df1.columns.tolist() if i in cols_requested]
+            cols_on_dataset = [i for i in df1.columns.tolist() if i in cols_important]
 
-            if not len(list_len) == 10:
-                st.write('Please, Provide a Correct Dataset, check Documentation!')
+            if len( cols_on_dataset ) < (len( cols_important )): # Need a better check
+
+                st.write(f'Please, provide a correct Dataset, you need {len(cols_important)} requested features and you have: {len(cols_on_dataset)}')
             
             else:
-                st.title('Predictions for Your Dataset')
+
+                st.subheader('Predictions for Your Dataset')
 
                 df = self.pl.clean_dataset( df1 )
                 df = self.pl.data_preparation( df )
@@ -157,4 +170,4 @@ if __name__ == '__main__':
 
     pa.dataset_app( df['df_raw'], df['df_pred'] )
 
-    pa.sender_dataset()
+    pa.sender_dataset( df['df_raw'] )
