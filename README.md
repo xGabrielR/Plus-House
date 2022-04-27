@@ -189,7 +189,6 @@ https://user-images.githubusercontent.com/75986085/156900893-525ac63f-d614-441f-
   <dl>
     <dt>Reduced MAPE error of Property 812 from 0.92 to 0.38.</dt>
     <dt>The Greater MAPE is 0.61 on Dataset, reduction of 0.33 of MAPE error rate.</dt>
-    <dt>Model prediction is </dt>
   </dl>
 </ul>
 
